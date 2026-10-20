@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Readers’ Haven – Book Registration & Order Form</title>
+</head>
+
+<body>
+
+    <h1 align="center">
+        Readers’ Haven – Book Registration &amp; Order Form
+    </h1>
+
+    <form action="order-success.html" target="_blank" method="post">
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend><b>Customer Information</b></legend>
+
+            <!-- Customer Name -->
+            <label for="customerName">Customer Name:</label>
+            <input type="text"
+                   id="customerName"
+                   name="customerName"
+                   placeholder="Enter your full name"
+                   required>
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email address"
+                   required>
+            <br><br>
+
+            <!-- Mobile Number -->
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel"
+                   id="mobile"
+                   name="mobile"
+                   placeholder="Enter your mobile number"
+                   required>
+            <br><br>
+
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input type="number"
+                   id="age"
+                   name="age"
+                   placeholder="Enter your age"
+                   min="1"
+                   max="120">
+            <br><br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   placeholder="Create a password"
+                   required>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Delivery Details -->
+        <fieldset>
+            <legend><b>Delivery Details</b></legend>
+
+            <!-- Address -->
+            <label for="address">Delivery Address:</label>
+            <br>
+
+            <textarea id="address"
+                      name="address"
+                      rows="4"
+                      cols="50"
+                      placeholder="Enter your complete delivery address"
+                      required></textarea>
+
+            <br><br>
+
+            <!-- Delivery Date -->
+            <label for="deliveryDate">Delivery Date:</label>
+            <input type="date"
+                   id="deliveryDate"
+                   name="deliveryDate">
+            <br><br>
+
+            <!-- Preferred Delivery Time -->
+            <label for="deliveryTime">Preferred Delivery Time:</label>
+            <input type="time"
+                   id="deliveryTime"
+                   name="deliveryTime">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Book Preference -->
+        <fieldset>
+            <legend><b>Book Preferences</b></legend>
+
+            <label for="category">Favorite Book Category:</label>
+
+            <select id="category"
+                    name="category"
+                    required>
+
+                <option value="">-- Select a Category --</option>
+                <option value="fiction">Fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="childrens-books">
+                    Children's Books
+                </option>
+
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <div align="center">
+            <input type="submit" value="Place Order">
+            <input type="reset" value="Reset Form">
+        </div>
+
+    </form>
+
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Readers’ Haven – Book Registration &amp; Order Form</title>
+</head>
+
+<body>
+
+    <h1 align="center">
+        Readers’ Haven – Book Registration &amp; Order Form
+    </h1>
+
+    <form action="order-success.html" target="_blank" method="post">
+
+        <!-- Hidden Input -->
+        <input type="hidden"
+               name="formType"
+               value="Readers Haven Book Order">
+
+        <!-- Customer Information -->
+        <fieldset>
+            <legend><b>Customer Information</b></legend>
+
+            <label for="customerName">Customer Name:</label>
+            <input type="text"
+                   id="customerName"
+                   name="customerName"
+                   placeholder="Enter your full name"
+                   required>
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email address"
+                   required>
+            <br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel"
+                   id="mobile"
+                   name="mobile"
+                   placeholder="Enter your mobile number"
+                   required>
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number"
+                   id="age"
+                   name="age"
+                   placeholder="Enter your age"
+                   min="1"
+                   max="120">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   placeholder="Create a password"
+                   required>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Book Order Details -->
+        <fieldset>
+            <legend><b>Book Order Details</b></legend>
+
+            <label for="bookTitle">Book Title:</label>
+            <input type="text"
+                   id="bookTitle"
+                   name="bookTitle"
+                   placeholder="Enter the book title"
+                   required>
+            <br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number"
+                   id="quantity"
+                   name="quantity"
+                   min="1"
+                   value="1"
+                   required>
+
+            <br><br>
+
+            <label for="category">Favorite Book Category:</label>
+
+            <select id="category"
+                    name="category"
+                    required>
+
+                <option value="">-- Select a Category --</option>
+                <option value="fiction">Fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="childrens-books">
+                    Children's Books
+                </option>
+
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Payment Method -->
+        <fieldset>
+            <legend><b>Preferred Payment Method</b></legend>
+
+            <input type="radio"
+                   id="cod"
+                   name="payment"
+                   value="Cash on Delivery"
+                   required>
+            <label for="cod">Cash on Delivery</label>
+
+            <br>
+
+            <input type="radio"
+                   id="online"
+                   name="payment"
+                   value="Online Payment">
+            <label for="online">Online Payment</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Additional Services -->
+        <fieldset>
+            <legend><b>Additional Services</b></legend>
+
+            <input type="checkbox"
+                   id="gift"
+                   name="services"
+                   value="Gift Wrapping">
+            <label for="gift">Gift Wrapping</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="bookmark"
+                   name="services"
+                   value="Bookmark">
+            <label for="bookmark">Bookmark</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="express"
+                   name="services"
+                   value="Express Delivery">
+            <label for="express">Express Delivery</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="greeting"
+                   name="services"
+                   value="Greeting Card">
+            <label for="greeting">Greeting Card</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Delivery Details -->
+        <fieldset>
+            <legend><b>Delivery Details</b></legend>
+
+            <label for="deliveryDate">Delivery Date:</label>
+            <input type="date"
+                   id="deliveryDate"
+                   name="deliveryDate">
+            <br><br>
+
+            <label for="deliveryTime">Preferred Delivery Time:</label>
+            <input type="time"
+                   id="deliveryTime"
+                   name="deliveryTime">
+
+            <br><br>
+
+            <label for="address">Delivery Address:</label>
+            <br>
+
+            <textarea id="address"
+                      name="address"
+                      rows="4"
+                      cols="50"
+                      placeholder="Enter your complete delivery address"
+                      required></textarea>
+
+            <br><br>
+
+            <label for="instructions">Special Instructions:</label>
+            <br>
+
+            <textarea id="instructions"
+                      name="instructions"
+                      rows="4"
+                      cols="50"
+                      placeholder="Enter any special delivery instructions">
+            </textarea>
+
+        </fieldset>
+
+        <br>
+
+        <!-- File Upload -->
+        <fieldset>
+            <legend><b>Reference Document</b></legend>
+
+            <label for="reference">
+                Upload Reference Image/Document:
+            </label>
+
+            <input type="file"
+                   id="reference"
+                   name="reference"
+                   accept=".jpg,.jpeg,.png,.pdf,.doc,.docx">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Submit and Reset -->
+        <div align="center">
+
+            <button type="submit">
+                Place Order
+            </button>
+
+            &nbsp;&nbsp;
+
+            <button type="reset">
+                Reset Form
+            </button>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
+</body>
+</html>

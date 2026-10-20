@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Restaurant Menu</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #443b35;
+    background:
+        linear-gradient(rgba(255,248,239,.87),
+                        rgba(255,248,239,.87)),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=85");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 45px 15px;
+    background: #f5e6d8;
+    border-bottom: 3px solid #d9b98c;
+}
+
+header h1 {
+    color: #405443;
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+header p {
+    color: #9c704b;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #e5cbb6;
+    border-radius: 18px;
+    background: rgba(255, 252, 247, 0.96);
+    box-shadow: 0 5px 18px rgba(110, 80, 50, 0.08);
+}
+
+h2 {
+    text-align: center;
+    color: #405443;
+    font-size: 29px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #755c48;
+}
+
+.intro {
+    background: #fff0e9;
+    line-height: 1.8;
+}
+
+.menu-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.starters {
+    background: #fff0ed;
+}
+
+.main-course {
+    background: #edf1e6;
+}
+
+li {
+    padding: 7px 2px;
+    line-height: 1.5;
+}
+
+.price {
+    float: right;
+    color: #8a6845;
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.food-card {
+    background: #fffaf4;
+    border: 1px solid #e5cbb6;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform .25s;
+}
+
+.food-card:hover {
+    transform: translateY(-4px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.food-card h3 {
+    margin: 12px 5px 5px;
+}
+
+.food-card p {
+    padding: 0 10px 12px;
+    font-size: 14px;
+}
+
+.categories {
+    background: #f1eee4;
+}
+
+.categories ul ul {
+    padding-left: 25px;
+}
+
+.categories li {
+    padding: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 28px 15px;
+    background: #ecdfe0;
+    color: #404054;
+    border-top: 2px solid #cfbcd2;
+}
+
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 29px;
+    }
+
+    .menu-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .food-card img {
+        height: 145px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Restaurant Menu</h1>
+    <p>♡ Good Food • Great Vibes • Always ♡</p>
+    <p>Welcome to The Garden Café</p>
+</header>
+
+<div class="container">
+
+<section class="intro">
+    <h2>About Our Restaurant</h2>
+    <p>
+        Welcome to The Garden Café, a cosy and elegant restaurant
+        where delicious flavours meet beautiful presentation.
+        We prepare every dish using fresh ingredients and carefully
+        selected spices. From traditional Indian favourites to
+        refreshing beverages and delightful desserts, our menu
+        offers something special for everyone. Enjoy a peaceful
+        atmosphere, warm hospitality and a memorable dining experience.
+    </p>
+</section>
+
+<div class="menu-layout">
+
+<section class="starters">
+    <h2>♡ Starters ♡</h2>
+    <ul>
+        <li>Paneer Tikka <span class="price">₹249</span></li>
+        <li>Vegetable Spring Rolls <span class="price">₹199</span></li>
+        <li>Tomato Soup <span class="price">₹149</span></li>
+        <li>Hara Bhara Kebab <span class="price">₹229</span></li>
+        <li>Cheese Garlic Bread <span class="price">₹179</span></li>
+    </ul>
+</section>
+
+<section class="main-course">
+    <h2>♡ Main Course ♡</h2>
+    <ol>
+        <li>Shahi Paneer <span class="price">₹329</span></li>
+        <li>Dal Makhani <span class="price">₹279</span></li>
+        <li>Vegetable Biryani <span class="price">₹299</span></li>
+        <li>Butter Chicken <span class="price">₹399</span></li>
+        <li>Malai Kofta <span class="price">₹319</span></li>
+        <li>Paneer Butter Masala <span class="price">₹329</span></li>
+    </ol>
+</section>
+
+</div>
+
+<section class="categories">
+    <h2>Food Categories</h2>
+    <ul>
+        <li>Vegetarian
+            <ul>
+                <li>Paneer Dishes</li>
+                <li>Dal and Lentils</li>
+                <li>Vegetable Curries</li>
+            </ul>
+        </li>
+        <li>Non-Vegetarian
+            <ul>
+                <li>Chicken Specialties</li>
+                <li>Mutton Dishes</li>
+                <li>Fish Preparations</li>
+            </ul>
+        </li>
+        <li>Beverages
+            <ul>
+                <li>Fresh Juices</li>
+                <li>Cold Coffee</li>
+                <li>Masala Chai</li>
+            </ul>
+        </li>
+        <li>Desserts
+            <ul>
+                <li>Gulab Jamun</li>
+                <li>Chocolate Brownie</li>
+                <li>Ice Cream</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Our Signature Dishes</h2>
+
+    <div class="gallery">
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=85"
+                 alt="Freshly baked pizza">
+            <h3>Royal Pizza</h3>
+            <p>Freshly baked with cheese and herbs.</p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=85"
+                 alt="Rich Indian curry">
+            <h3>Indian Curry</h3>
+            <p>Rich, creamy and full of flavour.</p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=85"
+                 alt="Indian thali">
+            <h3>Royal Thali</h3>
+            <p>A delightful selection of Indian favourites.</p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=85"
+                 alt="Ice cream dessert">
+            <h3>Sweet Treats</h3>
+            <p>A delicious ending to your meal.</p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=700&q=85"
+                 alt="Fresh vegetable salad">
+            <h3>Garden Salad</h3>
+            <p>Fresh, colourful and healthy.</p>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=85"
+                 alt="Freshly prepared coffee">
+            <h3>Cold Coffee</h3>
+            <p>A smooth and refreshing classic.</p>
+        </div>
+
+    </div>
+</section>
+
+<section style="background:#f4e9f4;">
+    <h2>Beverages & Desserts</h2>
+    <ul>
+        <li>Fresh Orange Juice <span class="price">₹119</span></li>
+        <li>Cold Coffee <span class="price">₹149</span></li>
+        <li>Masala Chai <span class="price">₹79</span></li>
+        <li>Gulab Jamun <span class="price">₹99</span></li>
+        <li>Ice Cream <span class="price">₹129</span></li>
+    </ul>
+</section>
+
+</div>
+
+<footer>
+    <h2>Thank You for Visiting!</h2>
+    <p>Made with love, served with warmth ♡</p>
+    <p>© 2026 The Garden Café</p>
+</footer>
+
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
